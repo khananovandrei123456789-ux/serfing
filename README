@@ -1,0 +1,21 @@
+
+── main.js
+── index.html
+── src/
+|   ├── styles/
+│   └── header.scss
+|   └── main1.scss
+│   └── main2.scss
+|   └── main3.scss
+│   └── main4.scss
+|   └── intermedia1.scss
+│   └── video.scss
+|   └── statistick.scss
+│   └── blog.scss
+|   └── weTeam.scss
+│   └── packServices.scss
+|   └── mapSection.scss
+│   └── footer.scss
+│   
+└── public/
+    └── images/

@@ -1,0 +1,31 @@
+@keyframes scalePointer{
+    0%{
+        transform:scale(1.25)
+    }
+    33%{
+        transform:scale(1.5)
+    }
+    66%{
+        transform:scale(1.25)
+    }
+    100%{
+        transform:scale(1)
+    }
+}
+
+.galleryClickRemoveImgAny:hover{
+    box-shadow: 20px 0px 6rem rgba(0, 178, 160, 0.9);
+}
+
+
+
+
+
+    .header-is-mouseenter{
+        background: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 0.7) 0%,
+                rgba(0, 0, 0, 0.5) 50%,
+                rgba(0, 0, 0, 0.3) 100%
+            ) !important;
+    }

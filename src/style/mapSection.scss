@@ -1,0 +1,27 @@
+.mapSection {
+    max-height: 1040px;
+    .map {
+        margin: 12.5rem auto 12.5rem auto;
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        @media(max-width:1650px){
+            margin: 8rem auto 8rem auto;
+        }
+        @media(max-width:1440px){
+            margin: 7rem auto 7rem auto;
+        }
+        @media(max-width:1220px){
+            margin: 6rem auto 6rem auto;
+        }
+        @media(max-width:980px){
+            margin: 5rem auto 5rem auto;
+        }
+        @media(max-width:870px){
+            margin: 4rem auto 4rem auto;
+        }
+        @media(max-width:540px){
+            margin: 3rem auto 3rem auto;
+        }
+    }
+}

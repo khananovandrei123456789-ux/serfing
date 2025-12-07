@@ -1,0 +1,132 @@
+@keyframes scrollBorder {
+    0% {
+        box-shadow: 
+            0 0 0 0 rgba(255, 215, 0, 0.4),
+            0 0 0 10px rgba(255, 215, 0, 0.2),
+            0 0 20px 20px rgba(255, 215, 0, 0.1);
+        transform: scale(0.95) ;
+    }
+    25% {
+        box-shadow: 
+            0 0 0 5px rgba(255, 215, 0, 0.5),
+            0 0 0 20px rgba(255, 215, 0, 0.3),
+            0 0 30px 30px rgba(255, 215, 0, 0.15);
+        transform: scale(1.05) ;
+    }
+    50% {
+        box-shadow: 
+            0 0 0 10px rgba(255, 215, 0, 0.6),
+            0 0 0 30px rgba(255, 215, 0, 0.4),
+            0 0 40px 40px rgba(255, 215, 0, 0.2);
+        transform: scale(0.95) ;
+    }
+    75% {
+        box-shadow: 
+            0 0 0 5px rgba(255, 215, 0, 0.5),
+            0 0 0 20px rgba(255, 215, 0, 0.3),
+            0 0 30px 30px rgba(255, 215, 0, 0.15);
+        transform: scale(1.05);
+    }
+    100% {
+        box-shadow: 
+            0 0 0 0 rgba(255, 215, 0, 0.4),
+            0 0 0 10px rgba(255, 215, 0, 0.2),
+            0 0 20px 20px rgba(255, 215, 0, 0.1);
+        transform: scale(0.95) ;
+    }
+}
+
+
+
+
+
+.scroll{
+    background:linear-gradient(135deg, gold, rgb(237, 205, 46), gold);
+    width: 5rem;
+    height: 5rem;
+    border:0.8rem solid rgb(174, 173, 173);
+    border-radius: 50%;
+    position:fixed;
+    z-index: 5;
+    top: 90%;
+    left:85%;
+    opacity:0;
+    visibility: hidden;
+    transform: scale(0.8);
+    transition: all 0.3s ease;
+    font-size: 2.7rem;
+    animation-name: scrollBorder;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    cursor:pointer;
+    @media(max-width:1040px){
+        width: 10rem;
+        height: 10rem;
+        font-size: 3rem;
+        border:1.6rem solid rgb(174, 173, 173);
+        top: 80%;
+        left:85%;
+    }
+    @media(max-width:540px){
+        width: 12rem;
+        height: 12rem;
+        font-size: 4rem;
+        border:3.2 solid rgb(174, 173, 173);
+        top: 80%;
+        left:75%;
+    }
+    @media(max-width:330px){
+        left:70%;
+    }
+    @media(max-width:330px){
+        left:60%;
+    }
+}
+
+.scroll.visible{
+    /* Добавьте это: состояние когда видно */
+    opacity: 0.9;
+    visibility: visible;
+    transform: scale(1);
+
+
+    /* &::before {
+        content: '★';
+        position: absolute;
+        left: -15px;
+        color: gold;
+    }
+    
+    &::after {
+        content: '→';
+        margin-left: 10px;
+    } */
+
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        border-radius: 50%;
+        background: radial-gradient(circle at 30% 30%, 
+            rgba(255, 255, 255, 0.3) 0%,
+            rgba(255, 255, 255, 0.1) 20%,
+            transparent 70%);
+        z-index: -1;
+        animation: innerGlow 4s ease-in-out infinite alternate;
+    }
+}
+
+@keyframes innerGlow {
+    0%, 100% {
+        opacity: 0.5;
+        transform: scale(0.95);
+    }
+    50% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+}

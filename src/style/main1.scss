@@ -1,0 +1,186 @@
+$font-text:'Roboto Condensed',sans-serif;
+$font-main:'Raleway', sans-serif;
+
+
+
+@mixin easyBlock{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1.875rem;
+    @media(max-width:425px){
+        margin: 10px;
+        }
+
+    @media(max-width:845px){
+        border:solid 3px rgba(0, 178, 160, 1);
+        border-radius: 10px;
+        padding: 10px;
+        }
+    >p{
+        font-family: $font-text;
+        font-weight: 300;
+        font-size: 0.875rem;
+        line-height: 1.125rem;
+        letter-spacing: 0.6px;
+        vertical-align: bottom;
+        color:rgba(36, 33, 33, 1);
+        margin: 0;
+        @media (max-width: 1200px) {
+        font-size: 12px !important;
+        }
+        @media (max-width: 1020px) {
+        font-size: 12px !important;
+        line-height: 2rem;
+        }
+        @media(max-width: 600px){
+            font-size: 12px !important;
+        }
+        @media(max-width: 520px){
+            font-size: 12px !important;
+        }
+    }
+}
+.firstPage {
+    display: grid;
+    margin-left: 18.8020833%;
+    margin-right: 24.9479167%;
+    margin-top: 11.8125rem;
+    margin-bottom: 12.2rem;
+
+    @media(max-width:1915px){
+        margin-left: 18%;
+    }
+    @media(max-width:1880px){
+        margin-left: 17%;
+        margin-right: 22%;
+    }
+    @media(max-width:1845px){
+        margin-left: 16%;
+        margin-right: 20%;
+    }
+    @media(max-width:1800px){
+        margin-left: 15%;
+        margin-right: 19%;
+    }
+    @media(max-width:1700px){
+        margin-left: 13%;
+        margin-right: 17%;
+    }
+    @media(max-width:1600px){
+        margin-left: 11%;
+        margin-right: 16%;
+    }
+    @media(max-width:1600px){
+        margin-left: 10%;
+        margin-right: 14%;
+    }
+    @media (max-width: 1200px) {
+        font-size: 12px;
+        margin-left: 8%;
+        margin-right: 12%;
+    }
+    
+    @media (max-width: 1020px) {
+        font-size: 12px;
+        margin-left: 7rem;
+        margin-right: 10rem;
+    }
+    @media(max-width: 600px){
+        font-size: 12px;
+        margin-left: 6rem;
+        margin-right: 9rem;
+    }
+    @media(max-width: 520px){
+        font-size: 12px;
+        margin-left: 5rem;
+        margin-right: 7rem;
+    }
+    @media(max-width: 475px){
+        font-size: 12px;
+        margin-left: 3rem;
+        margin-right: 5rem;
+    }
+    @media(max-width: 450px){
+        font-size: 12px;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    @media(max-width: 425px){
+        font-size: 10px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    @media(max-width: 425px){
+        font-size: 10px;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    
+    .firstTitle {
+        font-family: $font-main;
+        font-weight: 600;
+        font-size: 3rem;
+        line-height: 100%;
+        vertical-align: bottom;
+        color:rgba(1, 53, 62, 1);
+        letter-spacing: 0.6px;
+        margin: 0 auto;
+        margin-left: 9.6875rem;
+        margin-bottom: 6.25rem;
+        display: flex;
+        justify-content: flex-start;
+        padding: 5px 0 0 10px;
+        max-height: 50px;
+
+        @media(max-width:1915px){
+            margin-left: 8rem ;
+        }
+        @media(max-width:1880px){
+            margin-left: 7rem;
+
+        }
+        @media(max-width:1845px){
+            margin-left: 6rem;
+        }
+        @media(max-width:1800px){
+            font-size: 2.5rem;
+        }
+        @media(max-width:450px){
+            font-size: 2rem;
+        }
+        @media(max-width:360px){
+            font-size: 1.5rem;
+        }
+        @media(max-width:280px){
+            font-size: 1rem;
+        }
+        .tt {
+            font-family:$font-main;
+            font-size: 4.5rem;
+            font-weight: 600;
+            line-height: 100%;
+            letter-spacing: 0.6px;
+            vertical-align: bottom;
+            color:rgba(0, 178, 160, 1);
+            margin-right: -15px;
+            margin-top: 4px;
+        }
+    }
+    .easyDiv {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap:7.5rem;
+        @media(max-width:845px){
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2,1fr);
+            row-gap: 4rem;
+        }
+        .easyLeft {
+            @include easyBlock()
+        }
+        .easyRight {
+            @include easyBlock()
+        }
+    }
+}
+

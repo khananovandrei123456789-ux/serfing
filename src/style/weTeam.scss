@@ -1,0 +1,100 @@
+$font-text:'Roboto Condensed',sans-serif;
+$font-main:'Raleway', sans-serif;
+
+.weTeamSection {
+margin-top: 12.5rem;
+margin-bottom: 12.5rem;
+    .titleWeTeam {
+        font-family: $font-main;
+        font-weight: 600;
+        font-size: 3rem;
+        line-height: 100%;
+        vertical-align: bottom;
+        color:rgba(1, 53, 62, 1);
+        letter-spacing: 0.6px;
+        display: flex;
+        justify-content: center;
+        padding: 5px 0 0 35px;
+        max-height: 50px;
+        margin:0 auto;
+    
+        .tt {
+            font-family:$font-main;
+            font-size: 4.5rem;
+            font-weight: 600;
+            line-height: 100%;
+            letter-spacing: 0.6px;
+            vertical-align: bottom;
+            color:rgba(0, 178, 160, 1);
+            margin-right: -15px;
+            margin-top: 4px;
+        }
+    }
+    .photoBlockTeam {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 6.5626rem;
+        max-width:1200px;
+        justify-content: center;
+        margin: 13.6rem auto 0 auto;
+        @media(max-width:1300px){
+            column-gap: 0px;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3,1fr);
+            row-gap: 4rem;
+        }
+        @media(max-width:1200px){
+            margin: 10rem auto 0 auto;
+        }
+        .Names{
+            @media(max-width:1300px){
+                justify-content: center;
+                margin: 0 auto;
+                }
+            .teams {
+                @media(max-width:1000px){
+                    max-width:220px ;
+                    max-height:300px ;
+                }
+            }
+            .names {
+                font-family: $font-text;
+                font-weight: 700;
+                font-size: 1.125rem;
+                line-height: 1.125rem;
+                letter-spacing: 0.6px;
+                vertical-align: bottom;
+                color:rgba(36, 33, 33, 1);
+                text-align: center;
+                margin: 1.4625rem 0.3rem 0 0;
+                @media(max-width:1201px){
+                    font-size:1.5rem ;
+                    line-height:1.5rem ;
+                }
+                @media(max-width:601px){
+                    font-size:2.2rem ;
+                    line-height:2.2rem ;
+                }
+            }
+            .categories {
+                font-family: $font-text;
+                font-weight: 400;
+                font-size: 0.875rem;
+                line-height: 1.125rem;
+                letter-spacing: 0.6px;
+                vertical-align: bottom;
+                color:rgba(36, 33, 33, 1);
+                text-align: center;
+                margin: 5px 0.3rem 0 0;
+                @media(max-width:1201px){
+                    font-size:1.25rem ;
+                    line-height:1.5rem ;
+                }
+                @media(max-width:601px){
+                    font-size:1.6rem ;
+                    line-height:2rem ;
+                }
+            }
+        }
+    }
+}

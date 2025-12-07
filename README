@@ -16,6 +16,32 @@
 │   └── packServices.scss
 |   └── mapSection.scss
 │   └── footer.scss
+│   └──components/
+│   │     └──burger.scss
+│   │     └──func.scss
+│   │     └──preloader.scss
+│   │     └──scrollButton.scss
+│   │     └──validate.scss
+│   │
+│   │
+│   └──JS/
+│       └── burgerMenu.js
+│       └── headerSmokeEffect.js 
+│       └── scroll.js
+│       └── validate.js
+│
+│
 │   
 └── public/
     └── images/
+
+
+
+
+
+    comand:
+
+
+    npm run dev- запуск локально в браузере
+
+    npm run dev -- --host запуст в локальной сети (можно открыть по ссылке на устройстве , которое подключено к той же сети Wi-fi)
